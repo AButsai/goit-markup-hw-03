@@ -132,14 +132,14 @@ body {
 .hero-wrap-title {
   max-width: 696px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .hero-section-title {
   color: var(--color-title);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.38;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
