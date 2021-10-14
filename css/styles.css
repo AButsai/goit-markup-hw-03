@@ -10,6 +10,10 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 :root {
   --font-family-global: 'Roboto', sans-serif;
   --font-family: 'Raleway', sans-serif;
@@ -68,7 +72,6 @@ body {
 }
 
 .header-wrap {
-  min-height: 80px;
   display: flex;
   align-items: center;
 }
@@ -88,7 +91,6 @@ body {
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
   margin-left: 93px;
 }
 
@@ -98,6 +100,8 @@ body {
 
 .header-link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -113,7 +117,6 @@ body {
 
 .nav-contacts {
   display: flex;
-  justify-content: space-between;
   margin-left: auto;
 }
 
@@ -169,7 +172,6 @@ body {
 
 .peculiarities-list {
   display: flex;
-  justify-content: space-between;
   text-align: left;
 }
 
@@ -199,10 +201,6 @@ body {
   padding-top: 0;
 }
 
-.speciality-wrap {
-  text-align: center;
-}
-
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -212,7 +210,14 @@ body {
 
 .speciality-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.speciality-list-item {
+  width: 370px;
+}
+
+.speciality-list-item + .speciality-list-item {
+  margin-left: 30px;
 }
 
 .speciality-img {
@@ -226,7 +231,6 @@ body {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .team-item {
@@ -236,8 +240,16 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-item + .team-item {
+  margin-left: 30px;
+}
+
 .team-img {
-  display: block;
+  margin-bottom: 30px;
+}
+
+.team-wrap-card {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -252,7 +264,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   color: var(--color-text);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 /* Футер */
